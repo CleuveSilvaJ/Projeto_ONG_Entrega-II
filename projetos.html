@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Garante que o site seja responsivo em dispositivos móveis -->
+  <title>Projetos | ONG Raízes do Amanhã</title>
+  <!-- Título exibido na aba do navegador -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Importa o arquivo CSS com toda a estilização -->
+</head>
+<body>
+  <!-- Cabeçalho da página com título principal e menu de navegação -->
+  <header>
+    <h1>Projetos | ONG Raízes do Amanhã</h1>
+
+    <!-- Botão do menu hambúrguer para dispositivos móveis -->
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+    <!-- Menu de navegação com links para outras páginas -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <!-- Seção com cartões de projetos organizados em grid -->
+    <section class="grid-projetos">
+      <!-- Cartão 1 -->
+      <div class="cartao">
+        <img src="assets/imagens/projeto1.jpg" alt="Crianças em atividade educativa">
+        <h3>Educar para Transformar</h3>
+        <p>Oficinas e reforço escolar para crianças e adolescentes.</p>
+        <span class="tag tag-educacao">Educação</span>
+      </div>
+
+      <!-- Cartão 2 -->
+      <div class="cartao">
+        <img src="assets/imagens/projeto2.jpg" alt="Equipe de voluntários em ação">
+        <h3>Saúde em Movimento</h3>
+        <p>Ações de prevenção e atendimento básico em comunidades carentes.</p>
+        <span class="tag tag-saude">Saúde</span>
+      </div>
+
+      <!-- Cartão 3 -->
+      <div class="cartao">
+        <img src="assets/imagens/projeto3.jpg" alt="Mutirão de limpeza comunitária">
+        <h3>Verde Esperança</h3>
+        <p>Mutirões de limpeza, plantio de árvores e educação ambiental.</p>
+        <span class="tag tag-meio-ambiente">Meio Ambiente</span>
+      </div>
+    </section>
+
+    <!-- Seção com chamada para voluntariado -->
+    <section>
+      <article>
+        <h2>Voluntariado</h2>
+        <p>Participe dos nossos projetos como voluntário. Sua ajuda faz a diferença!</p>
+        <p><a href="cadastro.html">Clique aqui para se cadastrar</a>.</p>
+      </article>
+    </section>
+
+    <!-- Seção com informações sobre doações -->
+    <section>
+      <article>
+        <h2>Como Doar</h2>
+        <p>Contribua com doações financeiras, alimentos ou materiais escolares. Toda ajuda fortalece nossas ações.</p>
+        <p>Para mais informações, entre em contato conosco.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé com informações institucionais e de contato -->
+  <footer>
+    <p>&copy; 2025 ONG Raízes do Amanhã | contato@raizesdoamanha.org</p>
+  </footer>
+
+  <!-- Script JavaScript para ativar o menu hambúrguer -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

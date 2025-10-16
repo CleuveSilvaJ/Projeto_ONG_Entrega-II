@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Garante que o site seja responsivo em dispositivos móveis -->
+  <title>ONG Raízes do Amanhã</title>
+  <!-- Título exibido na aba do navegador -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Importa o arquivo CSS com toda a estilização -->
+</head>
+<body>
+  <!-- Cabeçalho da página com título principal e menu de navegação -->
+  <header>
+    <h1>ONG Raízes do Amanhã</h1>
+
+    <!-- Botão do menu hambúrguer para dispositivos móveis -->
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+    <!-- Menu de navegação com links para outras páginas -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Imagem institucional da ONG com legenda -->
+  <figure>
+    <img src="assets/imagens/banner-raizes.jpg" alt="Banner institucional da ONG Raízes do Amanhã" class="banner">
+    <figcaption>Transformando vidas com educação, saúde e cidadania.</figcaption>
+  </figure>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <!-- Seção com informações sobre os projetos da ONG -->
+    <section>
+      <article>
+        <h2>Nossos Projetos</h2>
+        <p>Conheça as iniciativas que estão transformando vidas em comunidades vulneráveis. Cada projeto é desenvolvido com foco em educação, saúde, meio ambiente e cidadania.</p>
+        <ul>
+          <li><strong>Educar para Transformar:</strong> Aulas de reforço escolar e oficinas culturais para crianças e adolescentes.</li>
+          <li><strong>Saúde em Movimento:</strong> Ações de prevenção e atendimento básico em regiões carentes.</li>
+          <li><strong>Verde Esperança:</strong> Mutirões de limpeza, plantio de árvores e educação ambiental.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Seção com chamada para voluntariado -->
+    <section>
+      <article>
+        <h2>Seja Voluntário</h2>
+        <p>Você pode fazer parte dessa transformação! Ofereça seu tempo, talento e energia para apoiar nossos projetos. Toda ajuda é bem-vinda e faz a diferença.</p>
+        <p><a href="cadastro.html">Clique aqui para se cadastrar como voluntário</a>.</p>
+      </article>
+    </section>
+
+    <!-- Seção com informações sobre doações -->
+    <section>
+      <article>
+        <h2>Como Doar</h2>
+        <p>Ajude-nos a ampliar nosso impacto. Aceitamos doações financeiras, materiais escolares, alimentos e equipamentos. Sua contribuição fortalece nossas ações e chega diretamente a quem mais precisa.</p>
+        <p>Para mais informações sobre como doar, entre em contato conosco.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé com informações institucionais e de contato -->
+  <footer>
+    <p>&copy; 2025 ONG Raízes do Amanhã | contato@raizesdoamanha.org</p>
+  </footer>
+
+  <!-- Script JavaScript para ativar o menu hambúrguer -->
+  <script>
+    // Seleciona o botão e o menu
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    // Adiciona ou remove a classe 'active' ao clicar no botão
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
