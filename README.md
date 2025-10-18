@@ -2,6 +2,11 @@
 
 Este projeto consiste em uma página institucional para a ONG **Raízes do Amanhã**, com o objetivo de apresentar seus projetos sociais, incentivar o voluntariado e facilitar o cadastro de novos colaboradores.
 
+## 🌐 Site publicado
+
+Acesse aqui:  
+👉 [https://cleuvesilvaj.github.io/Projeto_ONG_Entrega-II/](https://cleuvesilvaj.github.io/Projeto_ONG_Entrega-II/)
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
